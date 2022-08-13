@@ -1,16 +1,14 @@
-class Namespace{
-    constructor(id, nsTitle, img, endpoint){
+class Namespace {
+    constructor(id, nsTitle, img, endpoint) {
         this.id = id;
+        this.nsTitle = nsTitle; 
         this.img = img;
-        this.nsTitle = nsTitle;
         this.endpoint = endpoint;
         this.rooms = [];
     }
-
-    addRoom(roomObj){
-        this.rooms.push(roomObj);
+    addRoom(roomObj) {
+        this.rooms.push(roomObj)
     }
-
 }
 
 module.exports = Namespace;
